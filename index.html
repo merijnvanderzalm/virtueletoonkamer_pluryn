@@ -136,6 +136,15 @@
   .chat-send { width:100%; margin-top:8px; background:var(--blue); border:none; border-radius:10px; color:#fff; font-size:14px; font-weight:700; padding:11px; cursor:pointer; font-family:inherit; transition:background 0.2s; }
   .chat-send:hover { background:var(--navy); }
   .chat-sent { display:none; text-align:center; padding:24px 16px; font-size:14px; font-weight:700; color:#2a7a40; }
+
+  .header-nav { display:flex; gap:12px; }
+  .nav-btn {
+    font-size:12px; font-weight:700; color:rgba(255,255,255,0.6);
+    text-decoration:none; padding:6px 14px; border-radius:20px;
+    border:1.5px solid rgba(255,255,255,0.2); transition:all 0.2s;
+  }
+  .nav-btn:hover { color:#fff; border-color:rgba(255,255,255,0.5); }
+  .nav-btn.active { color:#fff; background:var(--blue); border-color:var(--blue); }
 </style>
 </head>
 <body>
@@ -146,7 +155,10 @@
     <div><div class="logo-name">Pluryn</div><div class="logo-sub">Living Lab</div></div>
   </div>
   <div class="header-title">Virtuele Toonkamer</div>
-  <div style="width:80px"></div>
+  <div class="header-nav">
+    <a class="nav-btn active" href="#">Platte versie</a>
+    <a class="nav-btn" href="360.html">360° versie</a>
+  </div>
 </div>
 
 <div class="debug-badge">🔧 Debug — druk D om uit te zetten</div>
